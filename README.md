@@ -12,7 +12,7 @@ A. **OS & Linux fundamentals**, like:
 
 Operating systems are basically foundation of computing environments. Whether you 
 want to run pipelines or spin up servers for Kubernetes it's all powered by Linux.
-Most Docker containers use Linux images and as a devops engineer you will work most
+Most Docker containers use Linux images and as a DevOps engineer you will work most
 of the time with remote servers on cloud which use Linux operating system.
 
 B. **Git essentials** that let teams collaborate on code efficiently, like:
@@ -22,6 +22,6 @@ B. **Git essentials** that let teams collaborate on code efficiently, like:
   4. Resolving conflicts
   5. Git role in "X as Code"
 
-Git is needed across multiple tools and DeVops Concepts, whether you are
+Git is needed across multiple tools and DevOps concepts, whether you are
   a. writing a pipeline or infrastructure configuration
   b. writing Kubernetes manifest files or application code
