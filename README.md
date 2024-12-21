@@ -1,4 +1,4 @@
-# devops-beginner
+# devops
 
 This repo is a showcase of my knowledge in
 
