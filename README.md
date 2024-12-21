@@ -30,3 +30,5 @@ Git is needed across multiple tools and DevOps concepts, whether you are
   1. Installing dependecies
   2. Executing tests
   3. Packaging application
+
+Build tools like Maven, Gradle, or npm streamline the process of compiling, testing, and packaging applications, ensuring consistency across environments. Package managers such as apt, yum, pip, and npm simplify dependency management, making it easier to install, update, and maintain the libraries or tools your applications require.
