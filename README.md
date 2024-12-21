@@ -2,7 +2,7 @@
 
 This repo is a showcase of my knowledge in
 
-A. **OS & Linux fundamentals**, like:
+🅰. **OS & Linux fundamentals**, like:
   1. Shell commands
   2. Shell scripting
   3. File permissions
