@@ -27,6 +27,9 @@ want to run pipelines or spin up servers for Kubernetes it's all powered by Linu
 Most Docker containers use Linux images and as a DevOps engineer you will work most
 of the time with remote servers on cloud which use Linux operating system.
 
+**References**
+* [LinuxCommand.org](http://linuxcommand.org/)
+
 🅱. **Git essentials** that let teams collaborate on code efficiently, like:
   1. Common commands
   2. Branching strategies (gitflow, trunk-based)
@@ -35,8 +38,13 @@ of the time with remote servers on cloud which use Linux operating system.
   5. Git role in "X as Code"
 
 Git is needed across multiple tools and DevOps concepts, whether you are
-  a. writing a pipeline or infrastructure configuration
-  b. writing Kubernetes manifest files or application code
+* writing a pipeline or infrastructure configuration
+* writing Kubernetes manifest files or application code
+
+**References**
+* [Git Docs](https://git-scm.com/book/en/v2)
+* [GitHub Skills](https://skills.github.com/)
+
 
 🅲. **Build tools & Package managers**, essential for:
   1. Installing dependecies
@@ -45,6 +53,10 @@ Git is needed across multiple tools and DevOps concepts, whether you are
 
 Build tools like Maven, Gradle, or npm streamline the process of compiling, testing, and packaging applications, ensuring consistency across environments. Package managers such as apt, yum, pip, and npm simplify dependency management, making it easier to install, update, and maintain the libraries or tools your applications require.
 
+**References**
+* [Maven](https://maven.apache.org/guides/)
+* [Gradle](https://docs.gradle.org/current/userguide/userguide.html)
+* [npm](https://docs.npmjs.com/)
 
 ## DevOps Fundamentals
 🅰. **Containerization with Docker**
