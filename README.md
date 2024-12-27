@@ -15,9 +15,9 @@ All steps were implemented with a security-first mindset, following best practic
 
 ## DevOps Pre-Requisites
 🅰. **OS & Linux fundamentals**, like:
-  1. Shell commands
-  2. Shell scripting
-  3. File permissions
+  1. [Shell commands](./Pre-requisites/A.%20OS%20&%20Linux%20fundamentals/Shell%20commands.md)
+  2. [File permissions](./Pre-requisites/A.%20OS%20&%20Linux%20fundamentals/File%20permissions.md)
+  3. Shell scripting 
   4. SSH key management
   5. Networking
   6. Virtualization
