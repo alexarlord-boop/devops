@@ -1,6 +1,4 @@
 
-# User and Group management
-
 ### Table of contents
 1. [User management](#user-management)
 2. [Group management](#group-management)
