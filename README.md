@@ -60,6 +60,15 @@ Build tools like Maven, Gradle, or npm streamline the process of compiling, test
 
 ## DevOps Fundamentals
 🅰. **Containerization with Docker**
+ 1. [Introduction to Docker & Core concepts](./Fundamentals/A.%20Containerization/Introduction%20to%20Docker%20&%20Core%20concepts.md)
+ 2. Dockerfile
+ 3. Docker Compose
+ 4. Docker security
+ 5. Advanced Docker
+
+**References**
+* [Docker Docs](https://docs.docker.com/)
+* [Docker cheat sheet](https://dockerlabs.collabnix.com/docker/cheatsheet/)
 
 🅱. **Artifact repository**
 
