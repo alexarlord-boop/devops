@@ -80,17 +80,22 @@ Build tools like Maven, Gradle, or npm streamline the process of compiling, test
 
 ## DevOps Core
 🅰. **Container orchestration - Kubernetes**
+  1. [Kubernetes Concepts](./Core/A.%20Container%20orchestration%20-%20Kubernetes/Kubernetes%20Concepts.md)
+  2. Helm (package manager for Kubernetes)
+  3. CI/CD with Kubernetes (?)
+  4. Monitoring & Logging
+  5. Security in Kubernetes
 
-🅱. **Advanced cloud platform skills (AWS)**
+  🅱. **CI/CD**
+  1. Setting up CI/CD server
+  2. Integrate code repo to trigger pipeline
+  3. Build, test, deploy automation
+
+🅲. **Advanced cloud platform skills (AWS)**
   1. Design, build, maintain complex cloud infrastructure
   2. Scale cloud infrastructure
   3. Deploy and manage clusters
   4. Managed Kubernetes cluster: AWS EKS
-
-🅲. **CI/CD**
-  1. Setting up CI/CD server
-  2. Integrate code repo to trigger pipeline
-  3. Build, test, deploy automation
 
 ## DevOps Advanced
 🅰. **Infrastructure as Code** (IaC) with Terraform
