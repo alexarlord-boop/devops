@@ -5,11 +5,13 @@ It is a collection of notes, scripts, and configurations that I have used or cre
 
 All steps were implemented with a security-first mindset, following best practices and standards with DevSecOps tools for automated security checks.
 
+✴️ -- in progress, ❇️ -- completed
+
 ### Table of contents
-1. [DevOps Pre-Requisites](#devops-pre-requisites)
-2. [DevOps Fundamentals](#devops-fundamentals)
-3. [DevOps Core](#devops-core)
-4. [DevOps Advanced](#devops-advanced)
+1. ✴️ [DevOps Pre-Requisites](#devops-pre-requisites)
+2. ✴️ [DevOps Fundamentals](#devops-fundamentals)
+3. ✴️ [DevOps Core](#devops-core)
+4. ✴️ [DevOps Advanced](#devops-advanced)
 
 
 
