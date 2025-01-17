@@ -42,11 +42,27 @@ By providing an extensible platform that allows you to:
 2. ```kube-proxy``` = maintains network rules on nodes to make them operate as a service. (optional)
 3. ```Container Runtime``` = software to run containers (containerd, CRI-O, etc.) ([what are container runtimes?](https://www.wiz.io/academy/container-runtimes))
 
+* ```minikube``` = a tool that allows you to set up a single-node Kubernetes cluster on your local computer. [Install](https://minikube.sigs.k8s.io/docs/start/?arch=/macos/arm64/stable/binary+download)
+* ```kubectl``` = CLI to interact with K8s cluster. [Install](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+
 #### [Add-ons](https://kubernetes.io/docs/concepts/architecture/#dns): DNS, Web UI, Container Resource Monitoring, Cluster-level Logging
 
 
 ## Cluster Architecture
-- -- write more details in collapsible of "Components" section
-- -- then deepen details of CA.
+* >Cluster
+  >>Control Plane
+    >>* API Server
+    >>* Scheduler
+    >>* etcd
+    >>* Controller Manager
+    >>* cloud-controller-manager
+  >
+  >>Worker Node N
+    >>* Kubelet
+    >>* Kube Proxy
+    >>* Container Runtime
+    >>  * Pods
+    >>    * Containers
+
 
 ## API
