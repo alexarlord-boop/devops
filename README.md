@@ -11,7 +11,7 @@ All steps were implemented with a security-first mindset, following best practic
 1. ✴️ [DevOps Pre-Requisites](#devops-pre-requisites)
 2. ✴️ [DevOps Fundamentals](#devops-fundamentals)
 3. ✴️ [DevOps Core](#devops-core)
-4. ✴️ [DevOps Advanced](#devops-advanced)
+4. [DevOps Advanced](#devops-advanced)
 
 
 
