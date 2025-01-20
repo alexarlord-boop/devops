@@ -34,6 +34,15 @@ The degree of isolation between containers is controlled by **namespaces** and *
 
 Docker objects such as images, containers, networks, and volumes are managed by **Docker daemon** through the Docker API.
 
+# Build Image
+* ```docker build -t image-name:v1 .``` will build an image from the Dockerfile in the current directory and tag it as image-name:v1.
+* ```docker build -t image-name:v1 -f path/to/Dockerfile .``` will build an image from the specified Dockerfile.
+* ```docker build -t image-name:v1 -f path/to/Dockerfile -m 2GB .``` will build an image with a memory limit of 2GB.
+* ```docker build -t image-name:v1 --build-arg APP_COLOR=blue .``` will build an image with an argument passed to the Dockerfile.
+* ```docker build -t image-name:v1 --no-cache .``` will build an image without using cache.
+
+[Best practices](https://docs.docker.com/build/building/best-practices/)
+
 # Run Container
 * ```docker run -d -p 8080:80 docker/welcome-to-docker```
 * ```docker run -d -p HOST_PORT:CONTAINER_PORT some_image``` will run a container with  some_image in detached mode, mapping host port to container port.
