@@ -38,6 +38,7 @@ kubectl version
 # List all components in the cluster:
 kubectl get nodes
 kubectl get pods
+kubectl get pod -o wide # more info
 kubectl get services
 ...
 ```

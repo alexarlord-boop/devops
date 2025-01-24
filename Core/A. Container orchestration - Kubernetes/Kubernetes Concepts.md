@@ -32,7 +32,7 @@ By providing an extensible platform that allows you to:
 * ```Cluster``` = control plane AND 1+ worker nodes with running pods.
 #### Control Plane -- its components manages overall state of a cluster
 1. ```kube-apiserver``` = exposes K8s API.
-2. ```etcd``` = distributed key-value store for all cluster data.
+2. ```etcd``` = distributed key-value store for all cluster data - "the cluster brain".
 3. ```kube-scheduler``` = schedules pods, assigns to Node.
 4. ```kube-controller-manager``` = runs ```controllers``` (watch-loop that tracks current state and attempts to achieve desired one).
 5. ```cloud-controller-manager``` = interacts with underlying cloud providers (optional).
