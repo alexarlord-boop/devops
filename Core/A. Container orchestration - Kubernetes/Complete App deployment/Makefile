@@ -1,5 +1,5 @@
 
-cluster:
+cluster: view
 	kubectl apply -f secret.yaml
 	kubectl apply -f configmap.yaml
 	kubectl apply -f mongodb.yaml

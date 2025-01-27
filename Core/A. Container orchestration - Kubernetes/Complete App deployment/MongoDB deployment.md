@@ -33,8 +33,8 @@ Referenced artifacts should be created first.
 
 On macos, simply running ```minikube service mongo-express-service``` won't work, since we started minikube with the default [Docker driver](https://minikube.sigs.k8s.io/docs/drivers/).
 
+In my case, I no drivers in the docs worked. I started service with the following alternative command:
 
-You can try the alternative:
 ```bash
 kubectl port-forward service/mongo-express-service 8080:8081
 ```
