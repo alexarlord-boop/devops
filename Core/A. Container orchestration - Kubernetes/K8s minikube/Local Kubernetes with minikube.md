@@ -80,6 +80,7 @@ kubectl edit deployment NAME -o=json
 
 #### Debugging pods
 ```sh
+kubectl get pod --watch
 kubectl logs POD_NAME
 kubectl describe pod POD_NAME
 kubectl exec -it POD_NAME -- bin/bash
