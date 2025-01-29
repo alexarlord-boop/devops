@@ -65,4 +65,50 @@ By providing an extensible platform that allows you to:
     >>    * Containers
 
 
-## API
+## Namespaces
+* helps organize objects in the cluster.
+
+```bash
+kubectl get namespaces
+```
+
+Main namespaces, created by default:
+* ```default``` = if no namespace is specified.
+* ```kube-system``` = K8s system objects, processess.
+* ```kube-public``` = public info about the cluster.
+* ```kube-node-lease``` = heartbeats of nodes -- availability.
+
+#### Creation
+```bash
+kubectl create namespace my-namespace
+```
+a better option for documented creation - use in yaml K8s configuration.
+
+#### Use cases
+
+1. Organizing components, resources for better overview and management: 
+  * databases, 
+  * monitoring, 
+  * elastic stack, logging, etc.
+
+2. Avoiding conflicts with other teams: 
+  * same deployment name, but different configs 
+  
+3. Sharing resources
+  * Staging, development, production environments that uses same ELK
+  * Blue/Green deployments: different app versions, but usage of same resources.
+
+4. Limit access to resources: 
+  * team A can't see resources of team B.
+  * CPU, RAM, Storage quotas per namespace
+
+
+#### Limitations
+1. ConfigMaps, Secrets for shared resources are not shareable, we need to create them in each namespace.
+2. Only services are accessible across namespaces.
+3. You can't namespace volumes, nodes.
+
+```bash
+kubectl api-resources --namespaced=false
+kubectl api-resources --namespaced=true
+```
