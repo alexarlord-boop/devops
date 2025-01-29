@@ -82,7 +82,14 @@ Main namespaces, created by default:
 ```bash
 kubectl create namespace my-namespace
 ```
-a better option for documented creation - use in yaml K8s configuration.
+a better option for documented creation - use in yaml K8s configuration:
+```yaml
+...
+metadata:
+  name: my-namespace
+...
+```
+
 
 #### Use cases
 
@@ -111,4 +118,18 @@ a better option for documented creation - use in yaml K8s configuration.
 ```bash
 kubectl api-resources --namespaced=false
 kubectl api-resources --namespaced=true
+```
+
+
+#### Usage
+To address resources in a specific namespace, use ```-n``` or ```--namespace``` flag:
+```bash
+kubectl get pods -n my-namespace
+```
+
+Install tool ```kubens``` (kubectx for macOS) to switch between namespaces easily and skip namespace name mention.
+
+```bash
+kubens # list namespaces
+kubens my-namespace # switch to namespace
 ```
