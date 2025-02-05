@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: dashboard-tls-secret
+  namespace: kubernetes-dashboard
+spec:
+  secretName: dashboard-tls-secret
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: view.com
+  dnsNames:
+  - view.com
