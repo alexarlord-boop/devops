@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb-deployment
+  labels:
+    app: mongo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongo
+  template:
+    metadata:
+      labels:
+        app: mongo
+    spec:
+      containers:
+      - name: mongo
+        image: mongo:latest # look up image on docker hub for specifics, like version, ports, env vars, etc.
+        ports:
+        - containerPort: 27017
+        env:
+        - name: MONGO_INITDB_ROOT_USERNAME
+          valueFrom:  # avoid hardcoding sensitive data, use Secret artifact instead
+            secretKeyRef:
+              name: mongodb-secret
+              key: mongo-root-username
+        - name: MONGO_INITDB_ROOT_PASSWORD
+          valueFrom:  # avoid hardcoding sensitive data, use Secret artifact instead
+            secretKeyRef:
+              name: mongodb-secret
+              key: mongo-root-password
+        
+        # resources:
+        #   limits:
+        #     memory: "128Mi"
+        #     cpu: "500m"
+        #   requests:
+        #     memory: "64Mi"
+        #     cpu: "250m"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-service
+spec:
+  selector:
+    app: mongo # refers to the pod label in the Deployment template
+  ports:
+    - protocol: TCP
+      port: 27017 # service port, can be different from container port
+      targetPort: 27017 # container port
