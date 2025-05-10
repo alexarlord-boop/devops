@@ -17,9 +17,9 @@ All steps were implemented with a security-first mindset, following best practic
 
 ## DevOps Pre-Requisites
 🅰. **OS & Linux fundamentals**, like:
-  1. Shell commands
-  2. Shell scripting
-  3. File permissions
+  1. [Shell commands](./Pre-requisites/A.%20OS%20&%20Linux%20fundamentals/Shell%20commands.md)
+  2. [File permissions](./Pre-requisites/A.%20OS%20&%20Linux%20fundamentals/File%20permissions.md)
+  3. [Shell scripting](./Pre-requisites/A.%20OS%20&%20Linux%20fundamentals/Shell%20scripting.md)
   4. SSH key management
   5. Networking
   6. Virtualization
@@ -62,6 +62,15 @@ Build tools like Maven, Gradle, or npm streamline the process of compiling, test
 
 ## DevOps Fundamentals
 🅰. **Containerization with Docker**
+ 1. [Introduction to Docker & Core concepts](./Fundamentals/A.%20Containerization/Introduction%20to%20Docker%20&%20Core%20concepts.md)
+ 2. [Dockerfile](./Fundamentals/A.%20Containerization/Dockerfile.md)
+ 3. [Docker Compose](./Fundamentals/A.%20Containerization/Docker%20Compose.md)
+ 4. Docker security
+ 5. Advanced Docker
+
+**References**
+* [Docker Docs](https://docs.docker.com/)
+* [Docker cheat sheet](https://dockerlabs.collabnix.com/docker/cheatsheet/)
 
 🅱. **Artifact repository**
 

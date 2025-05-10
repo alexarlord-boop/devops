@@ -1,0 +1,16 @@
+services:
+  web:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    configs:
+      - source: httpd_config
+        target: /usr/local/apache2/conf/httpd.conf
+    environment:
+      SERVER_NAME: mylab.local
+
+configs:
+  httpd_config:
+    external: true
